@@ -3,41 +3,65 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>100 PICS Banner GitHub kleiner logo</title>
+<title>100 PICS Banner met winkelwagen in kader</title>
 <style>
   body {
     margin: 0;
-    background-color: #ffe0eb; /* Lichtroze achtergrond */
-    font-family: Arial, sans-serif;
+    background-color: #FFD7E1; /* lichtroze */
+    font-family: serif;
   }
   .banner {
-    width: 100%;
-    height: 120px;
-    background-color: #ccbff6; /* Paarse balk */
-    color: white;
-    font-family: "DejaVu Serif", serif;
-    font-size: 35px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 70px;
+    background-color: #C6B0F2; /* paarse banner */
     display: flex;
+    justify-content: space-between;
     align-items: center;
-    padding-left: 20px;
+    padding: 0 25px;
     box-sizing: border-box;
+    color: white;
+    font-size: 28px;
   }
-  .banner-text {
-    flex-grow: 1;
+  .logo {
+    font-weight: normal;
   }
-  .banner-box {
+  .cart-container {
+    background-color: #A084DC; /* paars kader */
+    border: 2px solid white;
+    border-radius: 14px;
     width: 150px;
-    height: 80px;
-    border: 3px solid white;
-    border-radius: 20px;
-    margin-right: 20px;
+    height: 55px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px; /* zorgt dat icoon niet tegen de rand zit */
+  }
+  .cart-icon {
+    width: 40px;
+    height: 40px;
+  }
+  .content {
+    margin-top: 70px; /* ruimte voor banner */
+    padding: 20px;
   }
 </style>
 </head>
 <body>
-  <div class="banner">
-    <div class="banner-text">100 PICS</div>
-    <div class="banner-box"></div>
+
+<div class="banner">
+  <div class="logo">100 PICS</div>
+  <div class="cart-container" aria-label="winkelwagen">
+    <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAAAXNSR0IArs4c6QAAAaJJREFUWIXtl3EOwjAQRNG3gq74fL7RXMrKgb9US3d8gXtTA+G0bzjPRL8hFNTNdpEeTZGzM4h+Nm8bl2lSCXgFTqPCKll5BScqslKl69R+6QLpRLz7EY25x3GOPWWRyQF1neZdcRss8XBdkwML5RGXv9OjExz/ccEt28xpULo+oHO7GdL9TA7BlfZbMhmJq6dQZrzBe7RZBY+eT1pSCDLZUDKvFQKM/0QcvLTFIVFVItLE8NmnxI3zwqlZnPaW2ScdrgLhO9YDb4K6+igfZyBHG2IQDYX1bwWJ5Oby+jUThmY5qvWh3ECXsKvQEtOZssqovSdtmJh6iTxG2zBQZxgZJjxg9xgTjRmH65vTuWAr5B4X/fDwA3FAYq4gvtfhBgAAAABJRU5ErkJggg==" alt="Winkelwagen icoon" class="cart-icon" />
   </div>
+</div>
+
+<div class="content">
+  <h1>Welkom bij 100 PICS</h1>
+  <p>Hier komt de rest van jouw app-inhoud.</p>
+</div>
+
 </body>
 </html>
